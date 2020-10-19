@@ -1,0 +1,12 @@
+a2d = [[3,2,1],[6,4,8],[7,4,2]]
+n= 3
+total=0 #1
+print("Nivel 1")
+for ren in range(n):
+  sumaRenglon =0
+  print("Nivel 2")
+  for col in range(n): 
+    sumaRenglon += a2d[ren][col]
+    total += a2d [ren][col]
+    print("Nivel3")
+print(total)
