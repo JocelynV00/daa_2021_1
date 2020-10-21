@@ -1,273 +1,74 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "name": "Untitled1.ipynb",
-      "provenance": [],
-      "authorship_tag": "ABX9TyNlnPOGfawppsEW4aPVlWca",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/21%20octubre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "5AQbB60Wayny",
-        "outputId": "8553aa26-b430-4fdc-a1b6-999d2c2e018c",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo2( n ):\n",
-        "    contador = 0\n",
-        "    for i in range( n ) :\n",
-        "        for j in range( n ) :\n",
-        "            contador += 1\n",
-        "    return contador\n",
-        "\n",
-        "ejemplo2(50 )"
-      ],
-      "execution_count": 3,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "2500"
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 3
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "qDMdcyhLdbm1",
-        "outputId": "f1c549cd-89e7-4d36-c518-d8b76a145dbb",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo3( n ):\n",
-        "  x = n * 2\n",
-        "  y = 0 \n",
-        "  for m in range ( 100 ):\n",
-        "    y = x - n\n",
-        "  return y  \n",
-        "ejemplo3( 6 )"
-      ],
-      "execution_count": 5,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "6"
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 5
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "8FNzYqpbe_ey",
-        "outputId": "1d135bab-23d0-421c-ef34-310020e3eef2",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo1( n ):\n",
-        "    c = n + 1\n",
-        "    d = c * n\n",
-        "    e = n * n\n",
-        "    total = c + e - d\n",
-        "    print(f\"total={ total }\")\n",
-        "ejemplo1( 99999 )"
-      ],
-      "execution_count": 7,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "total=1\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "W8gsInapf_ch",
-        "outputId": "e0f2308b-8235-4d17-e485-4503ff5496a4",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo4( n ):\n",
-        "    x = 3 * 3.1416 + n\n",
-        "    y = x + 3 * 3 - n\n",
-        "    z = x + y\n",
-        "    return z\n",
-        "\n",
-        "ejemplo4(9)"
-      ],
-      "execution_count": 8,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "36.849599999999995"
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 8
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "-iboTPXmg4g7",
-        "outputId": "81d90ba8-ff3b-4d34-ba1f-22d07f9b8083",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo5( x ):\n",
-        "    n = 10\n",
-        "    for j in range( 0 , x , 1 ):\n",
-        "        n = j + n\n",
-        "    return n\n",
-        "\n",
-        "ejemplo5(10)"
-      ],
-      "execution_count": 9,
-      "outputs": [
-        {
-          "output_type": "execute_result",
-          "data": {
-            "text/plain": [
-              "55"
-            ]
-          },
-          "metadata": {
-            "tags": []
-          },
-          "execution_count": 9
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "-1zx30C7ijod",
-        "outputId": "f222f4f2-3fdc-42dd-babf-fc92d5eb8ac3",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 34
-        }
-      },
-      "source": [
-        "def ejemplo6( n ):\n",
-        "    data=[[[1 for x in range(n)] for x in range(n)]\n",
-        "          for x in range(n)]\n",
-        "    suma = 0\n",
-        "    for d in range(n):\n",
-        "        for r in range(n):\n",
-        "            for c in range(n):\n",
-        "                suma += data[d][r][c]\n",
-        "    return suma\n",
-        "print(ejemplo6( 70 ))"
-      ],
-      "execution_count": 12,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "text": [
-            "343000\n"
-          ],
-          "name": "stdout"
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "metadata": {
-        "id": "vKeN6-O0nseS",
-        "outputId": "0cdf4070-981f-499c-a756-c03ae7d9af94",
-        "colab": {
-          "base_uri": "https://localhost:8080/",
-          "height": 326
-        }
-      },
-      "source": [
-        "def ejemplo6( n ):\n",
-        "    start_time = time()\n",
-        "    data=[[[1 for x in range(n)] for x in range(n)] \n",
-        "          for x in range(n)]\n",
-        "    suma = 0\n",
-        "    for d in range(n):\n",
-        "        for r in range(n):\n",
-        "            for c in range(n):\n",
-        "                suma += data[d][r][c]\n",
-        "    elapsed_time = time() - start_time\n",
-        "    print(\"Tiempo transcurrido: %0.10f segundos.\" % elapsed_time)\n",
-        "    return suma\n",
-        "ejemplo6( 50 )"
-      ],
-      "execution_count": 13,
-      "outputs": [
-        {
-          "output_type": "error",
-          "ename": "NameError",
-          "evalue": "ignored",
-          "traceback": [
-            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-            "\u001b[0;32m<ipython-input-13-e04bda4f8f96>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     11\u001b[0m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Tiempo transcurrido: %0.10f segundos.\"\u001b[0m \u001b[0;34m%\u001b[0m \u001b[0melapsed_time\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     12\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0msuma\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 13\u001b[0;31m \u001b[0mejemplo6\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0;36m50\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
-            "\u001b[0;32m<ipython-input-13-e04bda4f8f96>\u001b[0m in \u001b[0;36mejemplo6\u001b[0;34m(n)\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mejemplo6\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0mn\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m     \u001b[0mstart_time\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mtime\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m     data=[[[1 for x in range(n)] for x in range(n)] \n\u001b[1;32m      4\u001b[0m           for x in range(n)]\n\u001b[1;32m      5\u001b[0m     \u001b[0msuma\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;36m0\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-            "\u001b[0;31mNameError\u001b[0m: name 'time' is not defined"
-          ]
-        }
-      ]
-    }
-  ]
-}
+def ejemplo1( n ):
+    c = n + 1
+    d = c * n
+    e = n * n
+    total = c + e - d
+    print(f"total={ total }")
+ejemplo1( 99999 )
+
+
+def ejemplo2( n ):
+    contador = 0
+    for i in range( n ) :
+        for j in range( n ) :
+            contador += 1
+    return contador
+
+ejemplo2(50 )
+
+
+
+def ejemplo3( n ):
+  x = n * 2
+  y = 0 
+  for m in range ( 100 ):
+    y = x - n
+  return y  
+ejemplo3( 6 )
+
+
+def ejemplo4( n ):
+    x = 3 * 3.1416 + n
+    y = x + 3 * 3 - n
+    z = x + y
+    return z
+
+ejemplo4(9)
+
+
+
+def ejemplo5( x ):
+    n = 10
+    for j in range( 0 , x , 1 ):
+        n = j + n
+    return n
+
+ejemplo5(10)
+
+
+def ejemplo6( n ):
+    data=[[[1 for x in range(n)] for x in range(n)]
+          for x in range(n)]
+    suma = 0
+    for d in range(n):
+        for r in range(n):
+            for c in range(n):
+                suma += data[d][r][c]
+    return suma
+print(ejemplo6( 70 ))
+
+
+
+def ejemplo6( n ):
+    start_time = time()
+    data=[[[1 for x in range(n)] for x in range(n)] 
+          for x in range(n)]
+    suma = 0
+    for d in range(n):
+        for r in range(n):
+            for c in range(n):
+                suma += data[d][r][c]
+    elapsed_time = time() - start_time
+    print("Tiempo transcurrido: %0.10f segundos." % elapsed_time)
+    return suma
+ejemplo6( 50 )
