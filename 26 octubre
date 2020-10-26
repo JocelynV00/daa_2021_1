@@ -1,0 +1,39 @@
+def ejemplo13( x ):
+    bandera = x
+    contador = 0
+    while( bandera >= 10):
+        print(f" x = { bandera } ")
+        bandera /= 10
+        contador = contador + 1
+    print(contador)
+# T(x) = log10 x +1
+ejemplo13( 1000 )
+
+
+def ejemplo14( n ):
+    y = n
+    z = n
+    contador = 0
+    while y >= 3: #3
+        y /= 3  # 1
+        contador += 1  # cont =3
+    
+    while z >= 3: #27
+        z /= 3
+        contador += 1
+    return contador
+print(ejemplo14( 27 ))
+
+
+def ejemplo15( n ): 
+    contador = 0
+    for i in range( n ) :
+        for j in range( n ) :
+            contador += 1
+            
+    while n > 1 :
+        contador += 1
+        n /= 2
+    return contador
+
+print(ejemplo15(10))
