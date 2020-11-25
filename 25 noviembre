@@ -1,0 +1,155 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled3.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOB6e1qKYi9xfJ148q1l/Jn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/25%20noviembre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "D43xV7fzFxYI"
+      },
+      "source": [
+        "frase =\"\"\"El lema que anima a la Universidad Nacional, Por mi raza hablará el espíritu, revela la vocación humanística con la que fue concebida. El autor de esta célebre frase, José Vasconcelos, asumió la rectoría en 1920, en una época en que las esperanzas de la Revolución aún estaban vivas,\n",
+        " había una gran fe en la Patria y el ánimo redentor se extendía en el ambiente.\"\"\"\n",
+        "\n",
+        "frase = frase.strip().replace(\"\\n\",\"\").replace(\",\",\"\").replace(\".\",\"\").lower().split(\" \")\n",
+        "print(frase)\n",
+        "frecuencias ={} \n",
+        "for index in range (len(frase)):\n",
+        "    if frase [index] in frecuencias : #el in frecuencias \n",
+        "      pass\n",
+        "    else:\n",
+        "        frecuencias [frase[index]]=1 #frecuencias [el] = 1 ---> {el : 1}\n",
+        "        for privote in range (index +1,len(frase),1):\n",
+        "            #print (frase[index], \"comparada contra:\" , frase [ pivote ] )\n",
+        "            if frase [index] == frase[pivote]:\n",
+        "                frecuencias [frase[index]] += 1\n",
+        "print (frecuencias)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "5eFy5B-uLPTv",
+        "outputId": "53471c5c-84ef-4e68-a8ed-692f2c2a8954"
+      },
+      "source": [
+        "frase =\"\"\"El lema que anima a la Universidad Nacional, Por mi raza hablará el espíritu, revela la vocación humanística con la que fue concebida. El autor de esta célebre frase, José Vasconcelos, asumió la rectoría en 1920, en una época en que las esperanzas de la Revolución aún estaban vivas,\n",
+        " había una gran fe en la Patria y el ánimo redentor se extendía en el ambiente.\"\"\"\n",
+        "\n",
+        "frase = frase.strip().replace(\"\\n\",\"\").replace(\",\",\"\").replace(\".\",\"\").lower().split(\" \")\n",
+        "print(frase)\n",
+        "frecuencias ={}\n",
+        "for index in range(len(frase)):\n",
+        "  print ( hash (frase[index]) )\n",
+        "  if frase [index] in frecuencias:\n",
+        "    frecuencias[frase[index]] += 1\n",
+        "  else:\n",
+        "    frecuencias[frase[index]] = 1\n",
+        "print (frecuencias)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "['el', 'lema', 'que', 'anima', 'a', 'la', 'universidad', 'nacional', 'por', 'mi', 'raza', 'hablará', 'el', 'espíritu', 'revela', 'la', 'vocación', 'humanística', 'con', 'la', 'que', 'fue', 'concebida', 'el', 'autor', 'de', 'esta', 'célebre', 'frase', 'josé', 'vasconcelos', 'asumió', 'la', 'rectoría', 'en', '1920', 'en', 'una', 'época', 'en', 'que', 'las', 'esperanzas', 'de', 'la', 'revolución', 'aún', 'estaban', 'vivas', 'había', 'una', 'gran', 'fe', 'en', 'la', 'patria', 'y', 'el', 'ánimo', 'redentor', 'se', 'extendía', 'en', 'el', 'ambiente']\n",
+            "-8035958550838803091\n",
+            "-8364356716601431730\n",
+            "-5350891810408299657\n",
+            "6025992795085063372\n",
+            "-8308172187962427371\n",
+            "3641769525215811871\n",
+            "8725238224012322414\n",
+            "6372355872193495090\n",
+            "-5328584832079423403\n",
+            "3541019803592736008\n",
+            "809964123225763989\n",
+            "6726765923161611136\n",
+            "-8035958550838803091\n",
+            "-6535474139968618403\n",
+            "-3129828955430878830\n",
+            "3641769525215811871\n",
+            "-5928278167417187096\n",
+            "4929910183833930188\n",
+            "5965127719001629817\n",
+            "3641769525215811871\n",
+            "-5350891810408299657\n",
+            "-1570957631201791715\n",
+            "584556220853909642\n",
+            "-8035958550838803091\n",
+            "7068214432632999618\n",
+            "-5886234092471709970\n",
+            "4237858915919616222\n",
+            "683097662661644679\n",
+            "-172680346178917397\n",
+            "8749935077501732352\n",
+            "-4971685161344037616\n",
+            "-4180449818777962220\n",
+            "3641769525215811871\n",
+            "-5090179529168304242\n",
+            "6164730361448290279\n",
+            "-6429984106288307527\n",
+            "6164730361448290279\n",
+            "-8484041090114446887\n",
+            "-8432014118833512152\n",
+            "6164730361448290279\n",
+            "-5350891810408299657\n",
+            "-4477370291922838871\n",
+            "-2948303369855083770\n",
+            "-5886234092471709970\n",
+            "3641769525215811871\n",
+            "-6005245522127717095\n",
+            "1785437015447389261\n",
+            "-5229427679279396303\n",
+            "-4029652720844175873\n",
+            "2225416164765044356\n",
+            "-8484041090114446887\n",
+            "-24424353810984656\n",
+            "-626813117577832602\n",
+            "6164730361448290279\n",
+            "3641769525215811871\n",
+            "-1911575848430535364\n",
+            "1191707137058698832\n",
+            "-8035958550838803091\n",
+            "7296897287627158728\n",
+            "4557183111687610683\n",
+            "6089997712140488977\n",
+            "4307310896173872586\n",
+            "6164730361448290279\n",
+            "-8035958550838803091\n",
+            "-7467605359772617698\n",
+            "{'el': 5, 'lema': 1, 'que': 3, 'anima': 1, 'a': 1, 'la': 6, 'universidad': 1, 'nacional': 1, 'por': 1, 'mi': 1, 'raza': 1, 'hablará': 1, 'espíritu': 1, 'revela': 1, 'vocación': 1, 'humanística': 1, 'con': 1, 'fue': 1, 'concebida': 1, 'autor': 1, 'de': 2, 'esta': 1, 'célebre': 1, 'frase': 1, 'josé': 1, 'vasconcelos': 1, 'asumió': 1, 'rectoría': 1, 'en': 5, '1920': 1, 'una': 2, 'época': 1, 'las': 1, 'esperanzas': 1, 'revolución': 1, 'aún': 1, 'estaban': 1, 'vivas': 1, 'había': 1, 'gran': 1, 'fe': 1, 'patria': 1, 'y': 1, 'ánimo': 1, 'redentor': 1, 'se': 1, 'extendía': 1, 'ambiente': 1}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
