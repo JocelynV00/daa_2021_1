@@ -1,0 +1,69 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPbVJO6/gfzHBoa7NDoPoyJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/30%20noviembre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KuLYX-Gb4vkb",
+        "outputId": "92b36049-1293-46c2-b390-8e0f14c51598"
+      },
+      "source": [
+        "A = \"AELASESLALSALSALSALSALSALASLSLSLSLSALALALALASALSALLSALAS\"\n",
+        "P = \"LAS\"\n",
+        "N = len(A)\n",
+        "M = len(P)\n",
+        "\n",
+        "def fuerza_bruta( A , P ):\n",
+        "    for i in range( N-M+1 ):\n",
+        "        for j in range( M ):\n",
+        "            if A[i+j] != P[j]:\n",
+        "                break\n",
+        "            else:\n",
+        "                pass\n",
+        "        if j+1 == M and A[ i + j] == P[j]:\n",
+        "            print(\"Encontrado en la posicion:\",i)\n",
+        "\n",
+        "fuerza_bruta(A,P)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Encontrado en la posicion: 2\n",
+            "Encontrado en la posicion: 24\n",
+            "Encontrado en la posicion: 42\n",
+            "Encontrado en la posicion: 53\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
