@@ -1,0 +1,78 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled5.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMHjnmV74gbCeRz1/aG/Dqv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/02%20diciembre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "sSV7nqdGTpq-"
+      },
+      "source": [
+        "def fnReclnfinita():\n",
+        "  print(\"Hola\")\n",
+        "  fnReclnfinita()"
+      ],
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "yihA6e9eUDYK"
+      },
+      "source": [
+        "def fnRec( x ):\n",
+        "  if x == 0:\n",
+        "    print (\"Stop\")\n",
+        "  else :\n",
+        "    fnRec ( x-1 )\n",
+        "    print ( x )\n",
+        "def main (): \n",
+        "  print(\"inicio del programa\")\n",
+        "  fnRec ( 5 )\n",
+        "  print(\"Fin del problema\")\n",
+        "main ()"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "jJ7Udxe5U9ty"
+      },
+      "source": [
+        "def printRev ( x ):\n",
+        "  if x > 0:\n",
+        "    print ( x )\n",
+        "    printRev( x - 1)\n",
+        "\n",
+        "  printRev( 3 )"
+      ],
+      "execution_count": 3,
+      "outputs": []
+    }
+  ]
+}
