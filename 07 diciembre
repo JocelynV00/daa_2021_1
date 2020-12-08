@@ -1,0 +1,84 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled6.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNRAYbfatuw7CXF47lcpLIR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/07%20diciembre\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IRTwtF6VrL1R",
+        "outputId": "f709101c-a8f4-4574-ff10-ebc5638ff556"
+      },
+      "source": [
+        "def fibonacci( n ):\r\n",
+        "    print(\"Llamada:\",n)\r\n",
+        "    if  n == 1 or n == 0:\r\n",
+        "        return n\r\n",
+        "    else:\r\n",
+        "        return ( fibonacci(n-1) + fibonacci(n-2) )\r\n",
+        "\r\n",
+        "\r\n",
+        "print(fibonacci(6))"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Llamada: 6\n",
+            "Llamada: 5\n",
+            "Llamada: 4\n",
+            "Llamada: 3\n",
+            "Llamada: 2\n",
+            "Llamada: 1\n",
+            "Llamada: 0\n",
+            "Llamada: 1\n",
+            "Llamada: 2\n",
+            "Llamada: 1\n",
+            "Llamada: 0\n",
+            "Llamada: 3\n",
+            "Llamada: 2\n",
+            "Llamada: 1\n",
+            "Llamada: 0\n",
+            "Llamada: 1\n",
+            "Llamada: 4\n",
+            "Llamada: 3\n",
+            "Llamada: 2\n",
+            "Llamada: 1\n",
+            "Llamada: 0\n",
+            "Llamada: 1\n",
+            "Llamada: 2\n",
+            "Llamada: 1\n",
+            "Llamada: 0\n",
+            "8\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
