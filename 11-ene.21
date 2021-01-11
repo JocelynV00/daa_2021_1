@@ -1,0 +1,118 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled7.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNfCn4kmhmhSTFYSIMtKEFg",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/JocelynV00/daa_2021_1/blob/master/11-ene.21\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kp7oX-VvBV8S"
+      },
+      "source": [
+        "class NodoArbol:\r\n",
+        "  def __init__ (self, value, left=None, rigth=None):\r\n",
+        "    self.data = value\r\n",
+        "    self.left = left\r\n",
+        "    self.rigth = rigth"
+      ],
+      "execution_count": 4,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "fP8l-gTpCWke"
+      },
+      "source": [
+        "arbol = NodoArbol(\"R\", NodoArbol(\"C\") , NodoArbol(\"H\") )"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QyFCcpUnC4_C"
+      },
+      "source": [
+        "nodo1 = NodoArbol (\"C\")\r\n",
+        "nodo2 = NodoArbol (\"H\")\r\n",
+        "arbol_v2 = NodoArbol (\"R\", nodo1, nodo2)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qitUQDuADyfX"
+      },
+      "source": [
+        "print(arbol.rigth.data)\r\n",
+        "print(arbol_v2.rigth.data)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "AX5QV5mGD8hn"
+      },
+      "source": [
+        "arbol2 = NodoArbol(4, NodoArbol (3,NodoArbol(2,NodoArbol(2))), NodoArbol (5, None,)None)\r\n",
+        "print(arbol2.left.left.left.data)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zmbeanZZFHqU"
+      },
+      "source": [
+        "aux = arbol2\r\n",
+        "while aux.left != None:\r\n",
+        "  aux=aux.left\r\n",
+        "\r\n",
+        "print(aux.data)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "dvOiRhzKFdke"
+      },
+      "source": [
+        "arbol3 = NodoArbol (\"Santi\", None, NodoArbol(\"Jesus\",NodoArbol(\"Pedro\",None,NodoArbol(\"diana\")), None))\r\n",
+        "print(arbol3.rigth.left.rigth.data)"
+      ],
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
